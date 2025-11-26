@@ -1,0 +1,99 @@
+/* Importa uma fonte mais moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* --- Reset e Estilos Globais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Um cinza bem claro para o fundo */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* --- Container Principal --- */
+main {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #1a237e; /* Um azul escuro para o título */
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* --- Formulário --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os elementos do formulário */
+    margin-bottom: 30px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Melhora a aparência ao focar nos campos */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #3949ab; /* Azul mais vibrante no foco */
+    box-shadow: 0 0 5px rgba(57, 73, 171, 0.3);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3949ab; /* Azul principal */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #283593; /* Azul um pouco mais escuro */
+    transform: translateY(-2px); /* Leve elevação */
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    transform: translateY(0);
+}
+
+/* --- Seção de Totais de Gastos --- */
+main p {
+    background-color: #e8eaf6; /* Fundo azul bem claro para destacar */
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 5px solid #3949ab; /* Borda lateral para dar ênfase */
+}
